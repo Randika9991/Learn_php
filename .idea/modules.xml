@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Array.iml" filepath="$PROJECT_DIR$/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Variable/Variable.iml" filepath="$PROJECT_DIR$/Variable/Variable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/function/conditionalsAndBoolean.iml" filepath="$PROJECT_DIR$/function/conditionalsAndBoolean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/function/conditionalsAndBooleans.iml" filepath="$PROJECT_DIR$/function/conditionalsAndBooleans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/function/function.iml" filepath="$PROJECT_DIR$/function/function.iml" />
+    </modules>
+  </component>
+</project>
