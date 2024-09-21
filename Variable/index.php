@@ -11,10 +11,9 @@
     $age = 25;        // Integer
     $isStudent = true; // Boolean
 
-    echo $name;
-    echo $age;  
-    echo $isStudent;
-?>
+    echo $name;  // Outputs: kamala
+    echo $age;   // Outputs: 25
+    echo $isStudent; // Outputs: 1
 </h1>
 </body>
 </html>
