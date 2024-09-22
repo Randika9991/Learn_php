@@ -32,7 +32,6 @@
     ?>
     </h1>
 
-   
     <h1>
     <?php   //multi array
          foreach ($book as $singleBook) {
@@ -44,6 +43,9 @@
             echo "<br>"; // break
         }
     ?>
+    </h1>
+    <h1>
+        <?=  $singleBook?>
     </h1>
 </body>
 </html>
