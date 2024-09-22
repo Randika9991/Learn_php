@@ -1,5 +1,0 @@
-cd ~/
-cd:/users/dulaksha/videos
-cd demo
-php -h
-php -S localhost:8888
