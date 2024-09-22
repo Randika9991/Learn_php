@@ -21,7 +21,7 @@
         ]
     ];
 
-    function filterByAuther(){
+    function filterByAuther($book){
        return 'filter';
     }
     
