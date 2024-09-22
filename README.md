@@ -1,6 +1,6 @@
-# PHP Learning Journey
+# PHP Learning sample projects!
 
-Welcome PHP learning sample project! This repository contains my practice code and projects as I explore the PHP language.
+PHP learning sample project! This repository contains my practice code and projects as I explore the PHP language.
 
 ## Project Description
 
@@ -26,22 +26,23 @@ In this project, I'm focusing on learning and practicing various PHP concepts, i
     cd Learn_php
     ```
 3. Run the project on your local server:
-    - If you're using XAMPP, place the project in the `htdocs` folder.
-    - Open `localhost/Learn_php` in your browser.
+    - Using XAMPP:
+    - Place the project in the htdocs folder.
+    - Open http://localhost/Learn_php in your browser.
       
-    - If you're using PHP development server.
-    - open the project past this
+    - Using PHP's built-in server:
+    - Navigate to the project directory in your terminal.
+    - Run the command:
    ```bash
     php -S localhost:8888
    ```
 
-      
 ## Features
 
 - **Database Interaction**: Perform CRUD operations using PHP PDO.
 - **User Authentication**: Simple login/logout functionality.
 - **Dynamic Pages**: Generate content dynamically using PHP templates.
-....
+- 
 
 ## Technologies Used
 
