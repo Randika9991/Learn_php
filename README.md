@@ -4,8 +4,6 @@ PHP learning sample project! This repository contains my practice code and proje
 
 ## Table of Contents
 
-## Table of Contents
-
 1. [Introduction](#project-description)
 2. [Installation](#installation)
 3. [Learning Steps](#learning-steps)
