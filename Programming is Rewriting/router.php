@@ -12,13 +12,7 @@
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // Only get the path without query string
 
 
-$routes = [
-    '/' => 'controllers/index.php',
-    '/about' => 'controllers/About.php',
-    '/contact' => 'controllers/Contact.php',
-    '/book' => 'controllers/book.php',
-    '/notes' => 'controllers/Note.php',
-];
+
 
 function routeToController($uri, $routes) {
     if (array_key_exists($uri, $routes)) {
@@ -35,5 +29,7 @@ function abort($code = 404) {
 
     die();
 }
+
+$routes = require('Routes.php');
 
 routeToController($uri, $routes);
