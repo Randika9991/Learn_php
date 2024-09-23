@@ -2,6 +2,16 @@
 
 PHP learning sample project! This repository contains my practice code and projects as I explore the PHP language.
 
+## Table of Contents
+
+## Table of Contents
+
+1. [Introduction](#project-description)
+2. [Installation](#installation)
+3. [Learning Steps](#learning-steps)
+4. [Features](#features)
+5. [Technologies Used](#technologies-used)
+   
 ## Project Description
 
 In this project, I'm focusing on learning and practicing various PHP concepts, including:
@@ -12,8 +22,6 @@ In this project, I'm focusing on learning and practicing various PHP concepts, i
 - Understanding sessions, cookies, and authentication
 
 ## Getting Started
-
-### Prerequisites
 
 ### Installation
 
