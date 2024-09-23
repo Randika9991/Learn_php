@@ -12,22 +12,47 @@ $heading = 'book';
 //get custId id
 $custId = isset($_GET['custId']) ? $_GET['custId'] : null;
 
-if ($custId) {
-    try {
-        $books = $db->query('SELECT * FROM customer WHERE custId = custId', ['custId' => $custId])->fetch(PDO::FETCH_ASSOC);
 
-        if (!$books) {
-            echo "No customer found with ID: " . htmlspecialchars($custId);
-            exit;
-        }
+//Authorization
+$currentUserId = 1;
 
-    } catch (PDOException $e) {
-        echo "Database error: " . $e->getMessage();
-        exit;
-    }
-} else {
-    echo "Customer ID is not provided.";
+//db have or not cust value
+$books = $db->query('SELECT * FROM customer WHERE custId = custId', ['custId' => $custId])->fetch(PDO::FETCH_ASSOC);
+
+if (! $books) {
+    abort("Customer ID is not provided.");
+}
+if ($books['custId'] !== $currentUserId) {
+    abort(Response::FORBIDDEN);
+}
+
+function abort($message = "An error occurred") {
+    http_response_code(404); // or 403 based on the error
+    echo htmlspecialchars($message);
     exit;
 }
+
+//if ($custId) {
+//    try {
+//        if (! $books) {
+//            abort();
+//        }
+//        if ($books['user_id'] !== $currentUserId) {
+//            abort(Response::FORBIDDEN);
+//        }
+//
+//        if (!$books) {
+//            echo "No customer found with ID: " . htmlspecialchars($custId);
+//            exit;
+//        }
+//
+//    } catch (PDOException $e) {
+//        echo "Database error: " . $e->getMessage();
+//        exit;
+//    }
+//} else {
+//    echo "Customer ID is not provided.";
+//    exit;
+//}
 
 require "views/book.view.php";
