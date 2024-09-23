@@ -36,6 +36,25 @@ In this project, I'm focusing on learning and practicing various PHP concepts, i
    ```bash
     php -S localhost:8888
    ```
+### Learning Steps
+
+1.Variable
+2.Conditionals and Booleans
+3.Arrays
+4.Associative Arrays
+5.Functions and Filters
+6.Lambda Functions
+7.Separate Logic From the Template
+8.Page Links
+9.PHP Partials
+10.Superglobals and Current Page Styling
+11.Make a PHP Router
+12.Create a MySQL Database & PDO First Steps
+13.
+14.
+15.
+16.
+
 
 ## Features
 
