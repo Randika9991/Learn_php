@@ -13,8 +13,8 @@
     </header>
     <main>
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <li><?= htmlspecialchars($books['custId'])  ?></li>
-            <li><?= htmlspecialchars($books['custName'])  ?></li>
+                <li><?= htmlspecialchars($books['id'])  ?></li>
+            <li><?= htmlspecialchars($books['notes'])  ?></li>
         </div>
     </main>
 </div>

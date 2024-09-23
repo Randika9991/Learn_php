@@ -4,7 +4,7 @@ return [
     'database' => [
         'host' => 'localhost',
         'port' => 3306,
-        'dbname' => 'spicy_flavour',
+        'dbname' => 'my_php',
         'charset' => 'utf8'
     ],
 ];

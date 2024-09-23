@@ -9,7 +9,7 @@ $db = new Database($config['database']);
 
 $heading = 'Note';
 
-$notes = $db->query('SELECT * FROM customer WHERE custId = "CUS-005"')->get();
+$notes = $db->query('SELECT * FROM notes WHERE id = 1')->get();
 //var_dump($notes);
 
 

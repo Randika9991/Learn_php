@@ -10,14 +10,14 @@ $db = new Database($config['database']);
 $heading = 'book';
 
 //get custId id
-$custId = isset($_GET['custId']) ? $_GET['custId'] : null;
+$id = isset($_GET['id']) ? $_GET['id'] : null;
 
 $currentUserId = 1;
 
 //db have or not cust value
-$books = $db->query('SELECT * FROM customer WHERE custId = :custId', ['custId' => $custId])->findOrFail();
+$books = $db->query('SELECT * FROM notes WHERE id = :id', ['id' => $id])->findOrFail();
 
-authorize($books['custId'] !== $currentUserId);
+authorize($books['id'] !== $currentUserId);
 
 //Authorization
 //if (! $books) {

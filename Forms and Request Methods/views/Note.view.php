@@ -14,10 +14,10 @@
     <main>
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <?php foreach ($notes as $note) : ?>
-                <li><?= $note['custId']  ?></li>
-                <li><?= $note['custName']  ?></li>
+                <li><?= $note['id']  ?></li>
+                <li><?= $note['body']  ?></li>
                 <li>
-                    <a href="/book?custId=<?=$note['custId']?>" class="bg-gray-100 hover:underline"><?= $note['custName']  ?></a>
+                    <a href="/book?custId=<?=$note['custId']?>" class="bg-gray-100 hover:underline"><?= $note['body']  ?></a>
                 </li>
             <?php endforeach; ?>
         </div>
