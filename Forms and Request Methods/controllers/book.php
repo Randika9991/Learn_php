@@ -12,6 +12,8 @@ $heading = 'book';
 //get custId id
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
+//dd($_GET);
+
 $currentUserId = 1;
 
 //db have or not cust value
@@ -19,40 +21,5 @@ $books = $db->query('SELECT * FROM notes WHERE id = :id', ['id' => $id])->findOr
 
 authorize($books['id'] !== $currentUserId);
 
-//Authorization
-//if (! $books) {
-//    abort("Customer ID is not provided.");
-//}
-//if ($books['custId'] !== $currentUserId) {
-//    abort(Response::FORBIDDEN);
-//}
-//function abort($message = "An error occurred") {
-//    http_response_code(404); // or 403 based on the error
-//    echo htmlspecialchars($message);
-//    exit;
-//}
-
-//if ($custId) {
-//    try {
-//        if (! $books) {
-//            abort();
-//        }
-//        if ($books['user_id'] !== $currentUserId) {
-//            abort(Response::FORBIDDEN);
-//        }
-//
-//        if (!$books) {
-//            echo "No customer found with ID: " . htmlspecialchars($custId);
-//            exit;
-//        }
-//
-//    } catch (PDOException $e) {
-//        echo "Database error: " . $e->getMessage();
-//        exit;
-//    }
-//} else {
-//    echo "Customer ID is not provided.";
-//    exit;
-//}
 
 require "views/book.view.php";

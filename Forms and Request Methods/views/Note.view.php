@@ -17,7 +17,7 @@
                 <li><?= $note['id']  ?></li>
                 <li><?= $note['body']  ?></li>
                 <li>
-                    <a href="/book?custId=<?=$note['custId']?>" class="bg-gray-100 hover:underline"><?= $note['body']  ?></a>
+                    <a href="/book?id=<?=$note['id']?>" class="bg-gray-100 hover:underline"><?= $note['body']  ?></a>
                 </li>
             <?php endforeach; ?>
         </div>
