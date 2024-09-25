@@ -26,16 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($email) { // Check if email is not null
         $existingUser = $db->query('SELECT * FROM users WHERE email_address = :email', ['email' => $email])->find();
         if ($existingUser) {
-            echo $email . " is already registered. Please choose another email.";
+            echo "<script>alert('This email is already registered. Please choose another email.');</script>";
         } else {
-            $db->query('INSERT INTO users(full_name, email_address,password) VALUES(:full_name, :email_address, :password)', [
-                'full_name' => $_POST['name'],
-                'email_address' => $_POST['email'],
-                'password' =>$_POST['password']
-            ]);
+                $create = $db->query('INSERT INTO users(full_name, email_address,password) VALUES(:full_name, :email_address, :password)', [
+                    'full_name' => $_POST['name'],
+                    'email_address' => $_POST['email'],
+                    'password' =>$_POST['password']
+                ]);
+            if ($create) {
+                echo "<script>alert('create.');</script>";
+            }
         }
-    } else {
-        echo "No email provided.";
     }
 
 
