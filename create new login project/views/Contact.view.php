@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php require "views/partials/head.php" ?>
 <html lang="en" class="h-full bg-gray-100">
-<body class="bg-blue-500">
+<body class="bg-purple-500">
 <div class="min-h-full">
 
     <?php require "views/partials/nav.php" ?>
