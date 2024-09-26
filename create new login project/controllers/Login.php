@@ -14,13 +14,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     if ($email && $password) {
-        $existingUser = $db->query('SELECT * FROM users WHERE email_address, = :email', ['email' => $email])->find();
-
-    }else{
-
+        $existingUser = $db->query('SELECT * FROM users WHERE email_address = :email AND password = :password', [
+            'email' => $email,
+            'password' => $password
+        ])->find();
+        if ($existingUser) {
+//            echo "User found. Proceed with login.";
+            header("Location: /home");
+        }
     }
-
-
 }
 
 
