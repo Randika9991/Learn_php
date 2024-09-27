@@ -1,10 +1,19 @@
-<?php
-$conn = new mysqli('localhost', 'root', '1234', 'my_php');
-if ($conn->connect_error) {
-    die('Connection failed: ' . $conn->connect_error);
-}
-if ($conn) {
-    echo "Connect";
-}
-
-    require 'new.php';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable</title>
+</head>
+<body>
+<h1>
+    <?php
+    $name = "kamala"; // String
+    $age = 25;        // Integer
+    $isStudent = true; // Boolean
+    echo $name;
+    echo $age;
+    echo $isStudent;
+    ?>
+</h1>
+</body>
+</html>
