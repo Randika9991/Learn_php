@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Variable</title>
-</head>
-<body>
-<h1>
 <?php
-    $name = "kamala"; // String
-    $age = 25;        // Integer
-    $isStudent = true; // Boolean
+$conn = new mysqli('localhost', 'root', '1234', 'my_php');
+if ($conn->connect_error) {
+    die('Connection failed: ' . $conn->connect_error);
+}
+if ($conn) {
+    echo "Connect";
+}
 
-    echo $name;  // Outputs: kamala
-    echo $age;   // Outputs: 25
-    echo $isStudent; // Outputs: 1
-</h1>
-</body>
-</html>
+    require 'new.php';
